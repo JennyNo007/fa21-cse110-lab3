@@ -1,0 +1,107 @@
+<!DOCTYPE html Public "published link">
+<html lang="EN">
+    <head> Meeting notes
+        <meta name="author", content="Zhenyi Chen">
+        <meta name="keywords", content="HTML">
+        <link rel="favicon" type="image/ico" href="favicon.ico"/>
+    </head>
+
+    <p></p>
+    <body>
+        <header>Meeting notes</header>
+        <hr>
+        <main>
+            <p>This is a meeting notes for the group in case anyone <i>misses anything</i>. 
+                <br>Please check <b class="keywords">before</b> the meeting. <br>Check after
+                the meeting to ensure <strong>anything is recorded correctly and clearly</strong>.
+            </p>
+            <h1>Date</h1>
+            <p>October 1st, 2021</p>
+            <h2>Meeting topics</h2>
+            <nav>
+                <ul>
+                    <li><a href = "#topics1"> topics1</a></li>
+                    <li><a href = "#topics2"> topics2</a></li>
+                    <li><a href = "#topics3"> topics3</a></li>
+                </ul>
+            </nav>
+
+            <h3>Attendance list</h3>
+            <div>
+                <nav>
+                    <ul>
+                        <li>Name1</li>
+                        <li>Name2</li>
+                        <li>Name3</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <h4>Agenda</h4>
+
+
+            <h5>To do list from last meeting</h5>
+            <nav>
+                <ol>
+                    <li><a href = "#todo1"> todo1</a></li>
+                    <li><a href = "#todo2"> todo2</a></li>
+                    <li><a href = "#todo3"> todo3</a></li>
+                </ol>
+            </nav>
+            <h6>Discussion on adding new tasks</h6>
+
+            <h7>Comments Questions Concerns</h7>
+            <span>
+                <a href="chat board" target="_blank"> Leave your thoughts here</a>
+            </span>
+            <h8>Pictures of diagrams</h8>
+            <img src="picsource" alt="describes the image being shown for screen readers, or if the image can't be displayed"/>
+
+            <h9>Audio recording</h9>
+            <details>
+                <summary>Audio specs</summary>
+                Audio length: 10 mins from the video recording
+            </details>
+
+            <h10>Video recording</h10>
+        </main>
+        
+    </body>
+    <footer>
+        <h11 id="subscribe">Subscribe new alert now</h11>
+        <form onsubmit="alert('Subscribed')">
+        <input type="text" placeholder="Enter Email Address: " />
+        <button>Submit</button>
+        </form>
+        <fieldset Ideas>
+            <legend>Name</legend>
+            <input type="text" id="name" value="Sam">
+        </fieldset>
+
+        <label for="Ideas">Tell us what you think:</label>
+        <textarea id="thoughts" rows="10" cols="40">
+            I think it is worth to share a good idea if you put it here...<br>
+            Let's make it come true!
+        </textarea>
+        
+        <label for="dateNextMeeting">Choose a date from this list for next meeting:</label>
+        <input list="dateChoice" id="dateNextMeeting" name="dateNextMeeting" />
+        <datalist id="dates">
+            <option value="Monday">
+            <option value="Tuesday">
+            <option value="Wednesday">
+            <option value="Thursday">
+            <option value="Friday">
+        </datalist>
+        
+        <label> Please choose a preferred meeting media:
+        <select name="media">
+            <option value="Zoom">First Value</option>
+            <option value="In-person" selected>Second Value</option>
+            <option value="Can't attend so doesn't matter">Third Value</option>
+        </select>
+
+        <br />
+        <div>&copy; Zhenyi Chen</div>
+    </footer>
+</html>

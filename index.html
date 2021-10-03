@@ -1,22 +1,23 @@
-<!DOCTYPE html Public "published link">
+<!DOCTYPE html>
 <html lang="EN">
-    <head> Meeting notes
-        <meta name="author", content="Zhenyi Chen">
-        <meta name="keywords", content="HTML">
+    <head>
+        <title>Meeting notes</title>
+        <meta name="author" content="Zhenyi Chen">
+        <meta name="keywords" content="HTML">
         <link rel="favicon" type="image/ico" href="favicon.ico"/>
     </head>
 
-    <p></p>
     <body>
-        <header>Meeting notes</header>
+        <header class="page-header">Meeting notes</header>
         <hr>
         <main>
             <p>This is a meeting notes for the group in case anyone <i>misses anything</i>. 
                 <br>Please check <b class="keywords">before</b> the meeting. <br>Check after
                 the meeting to ensure <strong>anything is recorded correctly and clearly</strong>.
             </p>
-            <h1>Date</h1>
-            <p>October 1st, 2021</p>
+            <h1>Meeting notes</h1>
+            <hr>
+            <h3>Date: October 1st, 2021</h3>
             <h2>Meeting topics</h2>
             <nav>
                 <ul>
@@ -51,11 +52,16 @@
             <h6>Discussion on adding new tasks</h6>
 
             <h7>Comments Questions Concerns</h7>
+            <br>
             <span>
                 <a href="chat board" target="_blank"> Leave your thoughts here</a>
             </span>
+            <br>
+
             <h8>Pictures of diagrams</h8>
+            <br>
             <img src="picsource" alt="describes the image being shown for screen readers, or if the image can't be displayed"/>
+            <br>
 
             <h9>Audio recording</h9>
             <details>
@@ -79,11 +85,11 @@
         </fieldset>
 
         <label for="Ideas">Tell us what you think:</label>
+        <br>
         <textarea id="thoughts" rows="10" cols="40">
-            I think it is worth to share a good idea if you put it here...<br>
-            Let's make it come true!
+            Let's make your good idea come true by sharing here first...
         </textarea>
-        
+        <br>
         <label for="dateNextMeeting">Choose a date from this list for next meeting:</label>
         <input list="dateChoice" id="dateNextMeeting" name="dateNextMeeting" />
         <datalist id="dates">
@@ -93,15 +99,17 @@
             <option value="Thursday">
             <option value="Friday">
         </datalist>
-        
+        <br>
         <label> Please choose a preferred meeting media:
         <select name="media">
             <option value="Zoom">First Value</option>
             <option value="In-person" selected>Second Value</option>
             <option value="Can't attend so doesn't matter">Third Value</option>
         </select>
-
+        <form onsubmit="alert('Submitted')">
+            <button>Submit</button>
+            </form>
         <br />
-        <div>&copy; Zhenyi Chen</div>
+        <div>&copy; Zhenyi Chen 2021</div>
     </footer>
 </html>

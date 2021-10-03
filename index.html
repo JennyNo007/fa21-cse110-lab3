@@ -73,25 +73,25 @@
         </main>
         
     </body>
-    <footer>
-        <h11 id="subscribe">Subscribe new alert now</h11>
+    
+        <h3 id="subscribe">Subscribe new alert now</h3>
         <form onsubmit="alert('Subscribed')">
         <input type="text" placeholder="Enter Email Address: " />
         <button>Submit</button>
         </form>
-        <fieldset Ideas>
+        <fieldset name>
             <legend>Name</legend>
             <input type="text" id="name" value="Sam">
         </fieldset>
 
-        <label for="Ideas">Tell us what you think:</label>
+        <label for="thoughts">Tell us what you think:</label>
         <br>
         <textarea id="thoughts" rows="10" cols="40">
             Let's make your good idea come true by sharing here first...
         </textarea>
         <br>
         <label for="dateNextMeeting">Choose a date from this list for next meeting:</label>
-        <input list="dateChoice" id="dateNextMeeting" name="dateNextMeeting" />
+        <input list="dates" id="dateNextMeeting" name="dateNextMeeting" />
         <datalist id="dates">
             <option value="Monday">
             <option value="Tuesday">
@@ -110,6 +110,7 @@
             <button>Submit</button>
         </form>
         <br />
+    <footer>
         <div>&copy; Zhenyi Chen 2021</div>
     </footer>
 </html>

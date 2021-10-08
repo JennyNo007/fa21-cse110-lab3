@@ -1,14 +1,119 @@
 /*This external css file is for the general topic*/
+body {
+    background-color: rgba(223, 188, 97, 0.658);
+    color: rgb(2, 55, 130);
+}
 
-/* apply colors to HTML elements */
-/* red, green, blue, alpha values */
-rgb(r, g, b)
-rgba(r, g, b, a)
-/* hex codes */
-#FFF or #FFFFFF
-/* hue, saturation, lightness, alpha values */
-hsl(h, s, l) or hsla(h, s, l, a)
-Color name (i.e ‘orange’)
+h1 {
+    color: hsl(268, 100%, 38%);
+    text-decoration: rgb(142, 186, 30);
+    text-align:inherit;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Lobster', cursive;
+}
 
-/*Background color*/
-background-color: #74992e;
+h2 {
+    color: hsla(80, 45%, 50%);
+}
+
+h3 {
+    color: rgb(46, 92, 171);
+}
+
+p {
+    font-size: ;
+    font-family: 'Libre Baskerville', serif;
+    color: rgba(239, 127, 9, 0.832);
+    
+    /*<top> <right> <bottom> <left>*/
+    padding: 0, 30px, 40px, 4em;
+    /*<top> <right> <bottom> <left>*/
+    margin: 25px 50px 75px 100px;
+    border: 2px solid powderblue;
+    border-style: dotted;
+    border-color: white;
+    border-width: 1em;
+    border-radius: 15px;
+
+    position: static;
+    position: relative;
+    position: fixed;
+    position: absolute;
+    position: sticky;
+
+}
+
+a {
+    background-color: powderblue;
+    transition: background-color .5s;
+}
+a:hover{
+    background-color:lavender;
+}
+form button{
+    background:lemonchiffon;
+}
+form:active {
+    color:#ffa07a;
+}
+.container{
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.item{
+    flex-basis: auto;
+    flex-grow: 5;
+    flex-shrink: 2;
+}
+.container{
+    display: grid;
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: auto;
+    grid-template-areas: initial;
+}
+
+.item{
+    grid-column: auto;
+    grid-row: auto;
+    grid-area: auto;
+}
+
+.box {
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+
+    margin: 40px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    margin-right: 6em;
+    
+    margin: auto;
+
+    padding-top: 0;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 4em;
+
+    display: block;
+    display: inline;
+    display: inline-block;
+    display: none;
+
+    max-width: 100px;
+    min-width: 1px;
+    width: 300px;
+    height: 150px;
+}
+
+.outer{
+    width: 38px;
+    height: 30ex;
+    background-color: rgb(142, 186, 30);
+    position: inherit;
+}
+
+

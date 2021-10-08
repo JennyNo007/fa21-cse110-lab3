@@ -1,0 +1,14 @@
+/*This external css file is for the general topic*/
+
+/* apply colors to HTML elements */
+/* red, green, blue, alpha values */
+rgb(r, g, b)
+rgba(r, g, b, a)
+/* hex codes */
+#FFF or #FFFFFF
+/* hue, saturation, lightness, alpha values */
+hsl(h, s, l) or hsla(h, s, l, a)
+Color name (i.e ‘orange’)
+
+/*Background color*/
+background-color: #74992e;

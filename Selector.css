@@ -1,0 +1,76 @@
+/*This is an external css file is for the most of the selectors, 
+the other selectors are in the gerneral css file! */
+/*Default order for the same style:
+    Inline style (inside an HTML element)
+    External and internal style sheets (in the head section)
+    Browser default
+*/
+.box {
+    border: 5px solid rebeccapurple;
+    background-color: lightgray;
+
+    margin: 40px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    margin-right: 6em;
+    
+    margin: auto;
+
+    padding-top: 0;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 4em;
+
+    display: block;
+    display: inline;
+    display: inline-block;
+    display: none;
+
+    max-width: 100px;
+    min-width: 1px;
+    width: 300px;
+    height: 150px;
+}
+
+#thoughts{
+    background-color: #FFF;
+}
+
+*.alert{
+    color: red;
+}
+
+h2{
+    font-family: 'Rubik Beastly', cursive;
+    font-size: 3pc
+}
+
+h3, h4{
+    font-size: 5ex
+}
+
+li,li{
+    list-style-type: disc;
+    font-size: 8mm;
+}
+
+span {
+    background-color: rgba(183, 255, 0, 0.797);
+}
+  
+div > p {
+    background-color: rgb(118, 149, 225);
+}
+
+div ~ p {
+    background-color: rgb(202, 231, 56);
+}
+
+div + p {
+    background-color: rgb(56, 228, 231);
+}
+
+header.page-header{
+    background-color: rgba(242, 165, 31, 0.77);
+}

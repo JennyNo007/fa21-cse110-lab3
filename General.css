@@ -1,8 +1,6 @@
-/*This external css file is for the general topic*/
-body {
-    background-color: rgba(223, 188, 97, 0.658);
-    color: rgb(2, 55, 130);
-}
+/*This is an external css file is for the general topic, 
+element selector, attribute selector*/
+
 
 h1 {
     color: hsl(268, 100%, 38%);
@@ -21,7 +19,7 @@ h3 {
 }
 
 p {
-    font-size: ;
+    font-size: 1cm;
     font-family: 'Libre Baskerville', serif;
     color: rgba(239, 127, 9, 0.832);
     
@@ -50,6 +48,7 @@ a {
 a:hover{
     background-color:lavender;
 }
+
 form button{
     background:lemonchiffon;
 }
@@ -79,34 +78,6 @@ form:active {
     grid-column: auto;
     grid-row: auto;
     grid-area: auto;
-}
-
-.box {
-    border: 5px solid rebeccapurple;
-    background-color: lightgray;
-
-    margin: 40px;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    margin-left: 60px;
-    margin-right: 6em;
-    
-    margin: auto;
-
-    padding-top: 0;
-    padding-bottom: 30px;
-    padding-left: 40px;
-    padding-right: 4em;
-
-    display: block;
-    display: inline;
-    display: inline-block;
-    display: none;
-
-    max-width: 100px;
-    min-width: 1px;
-    width: 300px;
-    height: 150px;
 }
 
 .outer{

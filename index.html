@@ -2,42 +2,44 @@
 <html lang="EN">
     <head>
         <title>Meeting notes</title>
+        
         <meta name="author" content="Zhenyi Chen">
         <meta name="keywords" content="HTML">
         <link rel="icon" type="image/x-ico" href="Resources/favicon.ico"/>
         <!--External CSS Why would need it in the head tag?? Wouldn't it not shown to the users-->
         <link rel="stylesheet" type="text/CSS" href="General.css">
+        <link rel="stylesheet" type="text/CSS" href="Selector.css">
         <!--Internal CSS-->
-        <!-- 
             <style>
-            body {background-color: rgb(228, 181, 181);}
-            h1   {color: blue;}
-            h2  {color:cornflowerblue}
-            h3  {color:rgb(139, 203, 76)}
-            h4  {color:rgb(167, 85, 85)}
-            p    {color: rgb(230, 136, 35);}
-            ul   {color:blanchedalmond}
+                body {
+                    background-color: rgb(144, 197, 238);
+                    color: rgb(2, 55, 130);
+                }
+                @media screen and (min-width: 700px) {
+                    body {
+                        background-color: rgba(223, 188, 97, 0.658);
+                    }
+                }
         </style>
-        -->
     </head>
 
     <body>
-        <header class="page-header"><h1>Meeting notes</h1></header>
-        <h3>Date: October 1st, 2021</h3>
+        <header class="page-header" style="font-size:3vw"><h1>Meeting notes</h1></header>
+        <h3 style="font-size:30px">Date: October 1st, 2021</h3>
         <hr>
-        <!--Inline CSS-->
+        
         <main>
             <p>This is meeting notes for the group in case anyone <i>misses anything</i>. 
                 <br>Please check <b class="keywords">before</b> the meeting. <br>Check after
                 the meeting to ensure <strong>anything is recorded correctly and clearly</strong>.
             </p>
             <section>
-                <h2>Meeting topics</h2>
+                <h2 style="font-size:4pc">Meeting topics</h2>
                 <nav>
                     <ul>
-                        <li><a href = "#topics1"> topics1</a></li>
-                        <li><a href = "#topics2"> topics2</a></li>
-                        <li><a href = "#topics3"> topics3</a></li>
+                        <li><a href = "#topics1" style="font-size:2pc"> topics1</a></li>
+                        <li><a href = "#topics2" style="font-size:2pc"> topics2</a></li>
+                        <li><a href = "#topics3" style="font-size:2pc"> topics3</a></li>
                     </ul>
                 </nav>
             </section>
@@ -45,6 +47,7 @@
             <section>
                 <h2>Attendance list</h2>
                 <div>
+                    <p>Absent will be marked as red.</p>
                     <nav>
                         <ul>
                             <li>Name1</li>
@@ -68,6 +71,11 @@
                     <ol>
                         <li><a href = "#todo1"> todo1</a></li>
                         <li><a href = "#todo2"> todo2</a></li>
+                        <style>
+                            li:first-of-type + li {
+                                color: red;
+                            }
+                        </style>
                         <li><a href = "#todo3"> todo3</a></li>
                     </ol>
                 </nav>
@@ -81,7 +89,7 @@
             <section>
                 <h3>Comments Questions Concerns</h3>
                 <span>
-                    <a href="https://docs.google.com/document/d/1si4QsyZn2SdokjXvkWgj2-L_1xEqCDFE7iHb2g0dkDQ/edit?usp=sharing" target="_blank">Leave your thoughts here</a>
+                    <a href="https://docs.google.com/document/d/1si4QsyZn2SdokjXvkWgj2-L_1xEqCDFE7iHb2g0dkDQ/edit?usp=sharing" target="_blank" style="font-size:3ch">Leave your thoughts here</a>
                 </span>
             </section>
             <br>
@@ -96,7 +104,7 @@
             <section>
             <h2>Audio recording</h2>
             <figure>
-                <figcaption>Listen to the scientificamerican:</figcaption>
+                <figcaption style="font-size:2vw">Listen to the scientificamerican:</figcaption>
                 <audio controls
                     src="Resources/RecycledXmasTrees.mp3">
                     <p>Your browser does not support the
@@ -104,7 +112,7 @@
                 </audio>
             
                 <details>
-                <summary>Audio reference</summary>
+                <summary >Audio reference</summary>
                 https://www.scientificamerican.com/podcast/episode/turn-xmas-tree-into-food-and-medicine/
                 </details>
             </figure>
@@ -127,23 +135,25 @@
             
         </main>
     
-        <h3>Subscribe new alert now</h3>
+        <h4>Subscribe new alert now</h4>
         <form onsubmit="alert('Subscribed')">
-        <input type="text" placeholder="Enter Email Address: " />
-        <button>Submit</button>
+        <input type="text" placeholder="Enter Email Address: " style="font-size:1vw"/>
+        <button style="font-size:1rem">Submit</button>
         </form>
+        <br>
         <fieldset name="ideaProvider">
-            <legend>Name</legend>
+            <legend style="font-size:30Q">Name</legend>
             <input type="text" id="name" value="Put your name in here...">
         </fieldset>
 
-        <label for="thoughts">Tell us what you think:</label>
         <br>
-        <textarea id="thoughts" rows="10" cols="40">
+        <label for="thoughts" style="font-size:20pt">Tell us what you think:</label>
+        <br>
+        <textarea id="thoughts" rows="5" cols="60" style="font-size:1vw">
             Let's make your good ideas come true by sharing them first...
         </textarea>
         <br>
-        <label for="dateNextMeeting">Choose a date from this list for next meeting:</label>
+        <label for="dateNextMeeting" style="font-size:3vh">Choose a date from this list for next meeting:</label>
         <input list="dates" id="dateNextMeeting" name="dateNextMeeting" />
         <datalist id="dates">
             <option value="Monday">
@@ -153,15 +163,16 @@
             <option value="Friday">
         </datalist>
         <br>
-        <label> Please choose a preferred meeting media:</label>
+        <label style="font-size:2rem"> Please choose a preferred meeting media:</label>
         <select name="media">
             <option value="First Value">Zoom</option>
             <option value="Second Value" selected>In-person</option>
             <option value="Third Value">Can't attend so doesn't matter</option>
         </select>
         <form onsubmit="alert('Submitted')">
-            <button>Submit</button>
+            <button style="font-size:1vw">Submit</button>
         </form>
+        
         <br />
     <footer>
         <div>&copy; Zhenyi Chen 2021</div>

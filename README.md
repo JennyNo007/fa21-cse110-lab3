@@ -1,1 +1,1 @@
-Zhenyi Chen's Lab3 published site: https://github.com/JennyNo007/fa21-cse110-lab3
+Zhenyi Chen's Lab3 published site: https://jennyno007.github.io/fa21-cse110-lab3/

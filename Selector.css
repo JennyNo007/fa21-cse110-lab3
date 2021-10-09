@@ -22,10 +22,6 @@ the other selectors are in the gerneral css file! */
     padding-left: 40px;
     padding-right: 4em;
 
-    display: block;
-    display: inline;
-    display: inline-block;
-    display: none;
 
     max-width: 100px;
     min-width: 1px;
@@ -43,11 +39,11 @@ the other selectors are in the gerneral css file! */
 
 h2{
     font-family: 'Rubik Beastly', cursive;
-    font-size: 3pc
+    font-size: 3pc;
 }
 
 h3, h4{
-    font-size: 5ex
+    font-size: 5ex;
 }
 
 li,li{

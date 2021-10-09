@@ -1,21 +1,25 @@
 /*This is an external css file is for the general topic, 
 element selector, attribute selector*/
 
-
 h1 {
-    color: hsl(268, 100%, 38%);
+    color: hsla(268, 100%, 38%, 0.263);
     text-decoration: rgb(142, 186, 30);
-    text-align:inherit;
+    text-align: inherit;
     font-family: 'Libre Baskerville', serif;
     font-family: 'Lobster', cursive;
+
+    position: fixed;
+    left: 1000px;
 }
 
 h2 {
     color: hsla(80, 45%, 50%);
+    display: inline;
 }
 
 h3 {
     color: rgb(46, 92, 171);
+    position: relative;
 }
 
 p {
@@ -32,16 +36,13 @@ p {
     border-color: white;
     border-width: 1em;
     border-radius: 15px;
-
+    
     position: static;
-    position: relative;
-    position: fixed;
-    position: absolute;
-    position: sticky;
-
+    flex-flow: 1;
 }
 
 a {
+    display: inline-block;
     background-color: powderblue;
     transition: background-color .5s;
 }
@@ -55,28 +56,29 @@ form button{
 form:active {
     color:#ffa07a;
 }
-.container{
+
+h2{
     display: flex;
-    flex-flow: column;
-    flex-wrap: nowrap;
-    flex-direction: row;
-}
-
-.item{
-    flex-basis: auto;
-    flex-grow: 5;
-    flex-shrink: 2;
-}
-.container{
     display: grid;
-    grid-template-columns: 40px 50px auto 50px 40px;
-    grid-template-rows: auto;
-    grid-template-areas: initial;
-}
-
-.item{
+    flex-flow:column-reverse;
+    flex-basis: auto;
+    grid-template-columns: auto;
     grid-column: auto;
+}
+h3{
+    display: flex;
+    display: grid;
+    flex-wrap: nowrap;
+    flex-grow: 5;
+    grid-template-rows: auto;
     grid-row: auto;
+}
+h4{
+    display:flex;
+    display: grid;
+    flex-direction: row;
+    flex-shrink: 2;
+    grid-template-areas: initial;
     grid-area: auto;
 }
 
